@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <h1>Калькулятор калорий</h1>
+    
+    <label>Цель (ккал/день): 
+        <input type="number" id="goal">
+    </label>
+    <button id="btn">Установить</button>
+    <p id="warning"></p>
+    <hr>
+
+    <label>Продукт: 
+        <input type="text" id="product-name">
+    </label>
+    <label>Калорийность (ккал): 
+        <input type="number" id="calories">
+    </label>
+    <button id="addBtn">Добавить</button>
+    <hr>
+
+    <label>Фильтр: 
+        <input type="text" id="filter" >
+    </label>
+    <button id="sortBtn">Сортировать по калорийности</button>
+    <hr>
+
+    <ul id="product-list"></ul>
+    <p>Всего калорий: <span id="total-calories">0</span></p>
+    <p>Цель: <span id="goalItem">2000</span> ккал</p>
+    <div id="progress-bar">
+        <svg width="100%" height="30">
+            <rect width="100%" height="100%" fill="#e0e0e0"></rect>
+            <rect id="progress" width="0%" height="100%" fill="#76c7c0"></rect>
+        </svg>
+    </div>
+    <button id="clearBtn">Очистить все</button>
+
+    <canvas id="chart" width="400" height="200"></canvas>
+  </div>
+  <script src="./js/localStorage.js" type="module"></script>
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>

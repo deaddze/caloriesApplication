@@ -1,0 +1,12 @@
+#app {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+canvas{
+  display: none;
+}
+button{
+  margin: 10px;
+}
